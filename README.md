@@ -10,4 +10,4 @@ This project investigates the relationship between Bitcoin price fluctuations an
 
 ### Datasets Used
 
-## Hypotheses
+## Hypotheses 
