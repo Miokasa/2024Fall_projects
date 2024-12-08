@@ -11,3 +11,6 @@ This project investigates the relationship between Bitcoin price fluctuations an
 ### Datasets Used
 
 ## Hypotheses 
+### (Ananyaa) Hypothesis 1: Crypto price volatility increases substantially in the days following the implementation of regulatory policies.
+### (Danni) Hypothesis 2: Bill passed in house has more impact on Bitcoin price trends than a bill that has only been introduced.
+### (Mengyao) Hypothesis 3: The impact of regulations on Bitcoin has a seasonal effect.
