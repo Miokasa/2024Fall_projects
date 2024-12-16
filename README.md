@@ -5,6 +5,7 @@
 This project investigates the relationship between Bitcoin price fluctuations and the introduction of laws and regulations related to cryptocurrency. By analyzing Bitcoin's historical price data alongside key legal events, the goal is to uncover insights into how legal frameworks influence the cryptocurrency market.
 ### Team Members
 [Ananyaa Tanwar](mailto:atanwar2@illinois.edu)  
+
 [Danni Wu](mailto:miokasa@illinois.edu)
 
 [Mengyao Wang](mailto:mengyao66666@illinois.edu)  
@@ -64,7 +65,7 @@ This revision better reflects the observed trends, emphasizing **short-term impa
 
 ---
 
-## Hypothesis 5: Crypto prices react more to bills introduced in Q3 and Q4, compared with Q1 and Q2.
+## (Mengyao) Hypothesis 5: Crypto prices react more to bills introduced in Q3 and Q4, compared with Q1 and Q2.
 This hypothesis is based on the assumption that end-of-year activities, such as profit-taking, or year-end settlements, could lead to higher volumes and price volatility.​
 Effect of bills is assessed using OLS regression model (residuals in OLS equation) and average normalized volume.
 
@@ -105,7 +106,7 @@ This revision better reflects the seasonal trends.
 
 ---
 
-## Hypothesis 6: Crypto prices react more to regulations than to supportive bills.​
+## (Mengyao) Hypothesis 6: Crypto prices react more to regulations than to supportive bills.​
 This hypothesis is based on the assumption that investors are more likely to be influenced by negative information.​ Effect of bills is assessed using average mean and average votatility 14 days before and after the event date.
 
 ---
