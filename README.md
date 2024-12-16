@@ -3,12 +3,14 @@
 # Analyzing Cryptocurrency data (Bitcoin), and its connection with laws and regulations passed
 ### Overview
 This project investigates the relationship between Bitcoin price fluctuations and the introduction of laws and regulations related to cryptocurrency. By analyzing Bitcoin's historical price data alongside key legal events, the goal is to uncover insights into how legal frameworks influence the cryptocurrency market.
+Please look at final_version_crypto_analysis.ipynb for the final version of the code.
 ### Team Members
 [Ananyaa Tanwar](mailto:atanwar2@illinois.edu)  
 [Danni Wu](mailto:miokasa@illinois.edu)
 [Mengyao Wang](mailto:mengyao66666@illinois.edu)  
 
 ### Datasets Used
+bitcoin_historical_data, sp500_data, results_US(law data), US_types(new column added compared to the original law data)
 
 ## Hypotheses 
 ## (Ananyaa) Hypothesis 1: Crypto price volatility increases substantially in the days following the implementation of regulatory policies.
@@ -166,30 +168,33 @@ The data analysis shows that some regulation types, particularly those related t
 
 ## (Mengyao) Hypothesis 5: Crypto prices react more to bills introduced in Q3 and Q4, compared with Q1 and Q2.
 This hypothesis is based on the assumption that end-of-year activities, such as profit-taking, or year-end settlements, could lead to higher volumes and price volatility.​
-Effect of bills is assessed using OLS regression model (residuals in OLS equation) and average normalized volume.
+The effect of bills is assessed using the OLS regression model (average residual in OLS equation 7 days after the event) and average normalized volume (7 days after the event).
+Reasons for using residuals: To eliminate the influence of other known factors. Bitcoin prices and returns are affected by various factors, including macroeconomic indicators and market events (e.g., news and regulatory changes). By using residuals, we can control for known influencing factors, and isolate the independent impact of the policy, focusing on what is left unexplained by the model.
 
 ---
 
 ### Analysis and Observations
 
 #### 1. **Average Residuals**
-- **Quaterly Average Residuals (2017-2024):**
+- **Quarterly Average Residuals (2017-2024):**
   - Q1: **-0.005426**
   - Q2: **-0.003440**
   - Q3: **-0.000717**
   - Q4: **0.007165**
-- These values indicate .
+- Bills impact bitcoin prices most in Q1 and Q4.
 
 #### 2. **Average Volume**
-- **Quaterly Average Volumn (2017-2024):**
+- **Quarterly Average Volumn (2017-2024):**
   - Q1: **0.095791**
   - Q2: **0.082698**
   - Q3: **0.070697**
   - Q4: **0.098344**
-- This highlights .
+- Average volume peaks in Q1 and Q4.
 
 #### 3. **Quarterly Trends**
 - The trends are consistent. Both average residual and average volume peak in Q1 and Q4, while they are significantly lower in Q2 and Q3.
+- The similarity indicates that residuals effectively capture the indirect impact of policies, particularly through trading behavior.
+- Trading behavior mediates the policy's impact on prices.
 
 ---
 
@@ -205,50 +210,54 @@ This revision better reflects the seasonal trends.
 
 
 ## (Mengyao) Hypothesis 6: Crypto prices react more to regulations than to supportive bills.​
-This hypothesis is based on the assumption that investors are more likely to be influenced by negative information.​ Effect of bills is assessed using average mean and average votatility 14 days before and after the event date.
+This hypothesis is based on the assumption that investors are more likely to be influenced by negative information.​ The effect of bills is assessed using average mean and volatility 14 days before and after the event date. The positivity or negativity of **Change of Average Return** represents investors' confidence in the bills, while the magnitude of **Volatility** reflects investors' expectations of the bills.
 
 ---
 
 ### Analysis and Observations
 
-#### 1. **Type Defination**
-- **Quaterly Average Residuals (2017-2024):**
-  - Neither type: **..**
-  - Potential regulation type: **..**
-  - Potential support: **..**
-  - Regulation: **..**
-  - Support: **..**
+#### 1. **Type Definition**
+- **Quarterly Average Residuals (2017-2024):**
+  - Neither type: **neither related to crypto nor related to blockchain or cybersecurity**
+  - Potential regulation type: **directly related to blockchain or cybersecurity & tend to regulate**
+  - Potential support: **directly related to blockchain or cybersecurity & tend to support**
+  - Regulation: **directly related to crypto & tend to regulate**
+  - Support: **directly related to crypto & tend to support**
 
 #### 2. **Change of Average Return**
-- **Quaterly Average Residuals (2017-2024):**
+- **Quarterly Average Residuals (2017-2024):**
   - Neither type: **-0.010230**
   - Potential regulation type: **-0.000778**
   - Potential support: **0.001275**
   - Regulation: **0.000511**
   - Support: **-0.002650**
-- These values .
+- From a common-sense perspective, the market reaction to supportive policies should be positive. However, the actual reaction is negative, indicating a lack of investor confidence in the supportive policies.
 
-#### 3. **Average Volatility**
+#### 3. **Volatility**
 - **14 days before the events:**
   - Neither type: **12.121968**
   - Potential regulation type: **10.823646**
   - Potential support: **12.314108**
   - Regulation: **8.701134**
   - Support: **26.497265**
-- This highlights.
+- Before the bills were introduced, investors' expectations for directly supportive policies were the highest. Investors' expectations for potentially supportive bills were the second highest.
+- Investors generally have positive expectations for supportive bills before they are introduced.
 - **14 days after the events:**
   - Neither type: **11.117225**
   - Potential regulation type: **17.541913**
   - Potential support: **14.437661**
   - Regulation: **36.847663**
   - Support: **15.045157**
-- This highlights.
-
+- After the bills were introduced, investors' expectations for directly regulated policies were the highest. Investors' expectations for potentially regulated bills were the second highest.
+- Investors generally have positive expectations for negative bills after they are introduced.
+  
 ---
 
 ### Conclusion
 The data provides partial support for the hypothesis:
-- both regulation and potential regulation events have a significant impact on the market, with returns increasing markedly after the events, accompanied by a substantial rise in volatility.​
-- Also, Regulatory policies have a positive impact on the market, while supportive policies, on the contrary, have a negative impact. Both direct regulatory bills and potential regulatory bills cause market volatility.
-- However, only direct supportive bills result in market fluctuations.​
+- Crypto prices react more to regulations than to regulatory bills after the events.​
+- However, Crypto prices react more to supportive bills before the events.​
+- Also, investors have lost confidence in supportive policies but are highly receptive to restrictive policies.
 
+#### **Revised Hypothesis**
+*"Crypto prices react more to regulations than to regulatory bills after the bills were introduced."*
