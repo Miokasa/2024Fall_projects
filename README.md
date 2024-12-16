@@ -6,7 +6,6 @@ This project investigates the relationship between Bitcoin price fluctuations an
 ### Team Members
 [Ananyaa Tanwar](mailto:atanwar2@illinois.edu)  
 [Danni Wu](mailto:miokasa@illinois.edu)
-
 [Mengyao Wang](mailto:mengyao66666@illinois.edu)  
 
 ### Datasets Used
