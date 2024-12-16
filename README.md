@@ -6,12 +6,13 @@ This project investigates the relationship between Bitcoin price fluctuations an
 ### Team Members
 [Ananyaa Tanwar](mailto:atanwar2@illinois.edu)  
 [Danni Wu](mailto:miokasa@illinois.edu)
+
 [Mengyao Wang](mailto:mengyao66666@illinois.edu)  
 
 ### Datasets Used
 
 ## Hypotheses 
-## (Ananyaa) Hypothesis 1: Crypto price volatility increases substantially in the days following the implementation of regulatory policies.
+## Hypothesis 1: Crypto price volatility increases substantially in the days following the implementation of regulatory policies.
 Cryptocurrencies are assets that can be influenced by various factors, 
 including regulatory interventions. This hypothesis posits that regulatory actions 
 introduce uncertainty into the market, resulting in heightened volatility in the days 
@@ -57,8 +58,12 @@ The data provides partial support for the hypothesis:
 
 This revision better reflects the observed trends, emphasizing **short-term impacts** while acknowledging the lack of significant long-term effects.
 
+---
 
 ## (Danni) Hypothesis 2: Bill passed in house has more impact on Bitcoin price trends than a bill that has only been introduced.
+
+---
+
 ## (Mengyao) Hypothesis 5: Crypto prices react more to bills introduced in Q3 and Q4, compared with Q1 and Q2.
 This hypothesis is based on the assumption that end-of-year activities, such as profit-taking, or year-end settlements, could lead to higher volumes and price volatility.​
 Effect of bills is assessed using OLS regression model (residuals in OLS equation) and average normalized volume.
