@@ -70,12 +70,12 @@ Using bootstrap resampling to estimate the distribution of mean differences betw
 
 #### 1. **Bootstrap mean difference**
 - **%PriceChange**
-  -  mean difference:0.123
+  -  mean difference:0.146
 - This indicates that the market reacts more strongly (positively or with greater volatility) when legislation is first introduced compared to passed House .
 
 #### 2. **Confidence level**
 - **Confidence Interval for the mean difference**
-  -  95% CI:(0.0533, 0.1289) > 0
+  -  95% CI:(0.113, 0.182) > 0
 - The entire interval is positive (above 0), it suggests that "Introduced" events have a greater positive impact on %PriceChange than "Passed House" events.
 
 #### 3. **Coefficients**
