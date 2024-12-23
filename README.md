@@ -19,11 +19,12 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
 ### Datasets Preparation
 1. For historical bitcoin price: 
 
-   Use yfinance API to get historical data from yahoo finance. (Please have a look at data_source.py for further details)
+   Use yfinance API to get historical data from yahoo finance. 
+   ![image](https://github.com/user-attachments/assets/ca8de19a-d777-4da4-9a7a-6bf582206e65)
 
 2. For historical S&P500 price: 
 
-   Use yfinance API to get historical data from yahoo finance. (Also, please have a look at data_source.py for further details)
+   Use yfinance API to get historical data from yahoo finance. 
 
 3. For US data: 
 
@@ -35,7 +36,17 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
    ![image](https://github.com/user-attachments/assets/b5707f0b-37a0-4111-8758-09b52821934d)
    ![image](https://github.com/user-attachments/assets/312bed47-c214-4a94-aa5b-11fc57c4d64b)
    ![image](https://github.com/user-attachments/assets/23333a9b-543c-41c8-97df-617ca3ce4655)
-   Secondly, filter 
+   
+   Secondly, filter the progress (in the results_US.csv, 'Progress' column), the types of themes (in the results_US.csv, 'Type' column), and the types of support or regulate (in the US_types.csv, 'Type 1' column) of bills manually.
+   1. Progress: Check the 'tracker' line under the detailed description of each bill.
+   ![image](https://github.com/user-attachments/assets/1060d6ab-a659-46aa-ab21-848dda7d2634)
+   3. Types of themes: Search the content of each bill and make a judgment based on the first sentence of the bill's detailed description.
+   4. Types of support or regulation:  Search the content of each bill and make a judgment based on the following criteria:
+      - Neither type: neither related to crypto nor related to blockchain or cybersecurity.
+      - Potential regulation type: directly related to blockchain or cybersecurity & tend to regulate.
+      - Potential support: directly related to blockchain or cybersecurity & tend to support.
+      - Regulation: directly related to crypto & tend to regulate.
+      - Support: directly related to crypto & tend to support.
 
 
 
