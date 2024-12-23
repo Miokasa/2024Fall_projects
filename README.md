@@ -17,14 +17,10 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
 3. For US laws' data: www.congress.gov
 
 ### Datasets Preparation
-1. For historical bitcoin price: 
+1. For historical bitcoin price and historical S&P500 price: 
 
    Use yfinance API to get historical data from yahoo finance. 
    ![image](https://github.com/user-attachments/assets/ca8de19a-d777-4da4-9a7a-6bf582206e65)
-
-2. For historical S&P500 price: 
-
-   Use yfinance API to get historical data from yahoo finance. 
 
 3. For US data: 
 
