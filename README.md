@@ -10,14 +10,17 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
 [Mengyao Wang](mailto:mengyao66666@illinois.edu)  
 
 ### Links for Datasets 
-For historical bitcoin price: https://finance.yahoo.com/quote/BTC-USD/history/
+1. For historical bitcoin price: https://finance.yahoo.com/quote/BTC-USD/history/
 
-For S&P500 price: https://finance.yahoo.com/quote/%5EGSPC/history/
+2. For historical S&P500 price: https://finance.yahoo.com/quote/%5EGSPC/history/
 
-For US laws' data: www.congress.gov
+3. For US laws' data: www.congress.gov
 
 ### Datasets Preparation
-For historical bitcoin price and S&P500 price: 
+1. For historical bitcoin price: 
+Use yfinance API to get historical data from yahoo finance.
+
+2. For historical S&P500 price: 
 Use yfinance API to get historical data from yahoo finance. 
 
 For US data: 
@@ -29,7 +32,8 @@ Firstly, filter and download raw data from www.congress.gov. Specifically, we na
    ![image](https://github.com/user-attachments/assets/b5707f0b-37a0-4111-8758-09b52821934d)
    ![image](https://github.com/user-attachments/assets/312bed47-c214-4a94-aa5b-11fc57c4d64b)
    ![image](https://github.com/user-attachments/assets/23333a9b-543c-41c8-97df-617ca3ce4655)
-
+Then, filter and download raw data from www.congress.gov. Specifically, we navigated to the "Advanced Searches" feature on the website and applied the following filters:
+1. Congress: Selected all years from 2013 to 2024.
 
 
 
