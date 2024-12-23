@@ -18,12 +18,15 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
 
 ### Datasets Preparation
 1. For historical bitcoin price: 
+
 Use yfinance API to get historical data from yahoo finance. (Please have a look at data_source.py for further details)
 
 2. For historical S&P500 price: 
+
 Use yfinance API to get historical data from yahoo finance. (Also, please have a look at data_source.py for further details)
 
-For US data: 
+3. For US data: 
+
 Firstly, filter and download raw data from www.congress.gov. Specifically, we navigated to the "Advanced Searches" feature on the website and applied the following filters:
 1. Congress: Selected all years from 2013 to 2024.
 2. Words and Phrases: Chose the "Only these fields" option and searched within "Title" and "Summaries" using keywords like cryptocurrency, blockchain, and bitcoin.
