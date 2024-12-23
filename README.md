@@ -11,7 +11,9 @@ Please look at final_version_crypto_analysis.ipynb for the final version of the 
 
 ### Links for Datasets 
 For historical bitcoin data: https://finance.yahoo.com/quote/BTC-USD/history/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAADIxRBSCaarW5QtXzbNj37gLIKN0jhgoJle9vFz-dXN5AoxcQDNqDb01kJ4hU4epRyFAq8abCrQJBoiznaUxuSzkDlky9bteaBLCfE1YAFqB0rha0PmPvJHrJ9_v3IIXSdgOzkVYoCoW5W0W88KviwCapccNLQA3_Ee-Yq2f4tse
+
 For S&P500 data: https://finance.yahoo.com/quote/%5EGSPC/history/
+
 For US laws' data: www.congress.gov
 
 ### Datasets Preparation
