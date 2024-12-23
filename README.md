@@ -17,14 +17,16 @@ For S&P500 price: https://finance.yahoo.com/quote/%5EGSPC/history/
 For US laws' data: www.congress.gov
 
 ### Datasets Preparation
-For historical bitcoin price and S&P500 price: use yfinance API to get historical data from yahoo finance. 
+For historical bitcoin price and S&P500 price: 
+Use yfinance API to get historical data from yahoo finance. 
 
-For US data: Firstly, filter and download raw data from www.congress.gov. Specifically, we navigated to the "Advanced Searches" feature on the website and applied the following filters:
+For US data: 
+Firstly, filter and download raw data from www.congress.gov. Specifically, we navigated to the "Advanced Searches" feature on the website and applied the following filters:
 1. Congress: Selected all years from 2013 to 2024.
 2. Words and Phrases: Chose the "Only these fields" option and searched within "Title" and "Summaries" using keywords like cryptocurrency, blockchain, and bitcoin.
 3. Legislation Types: Included all legislation types.
 4. Actions/Status: Allowed any action status.
-   ![image](https://github.com/user-attachments/assets/06ab4840-79f4-489f-ad15-4e5fdae7b650)
+   ![image](https://github.com/user-attachments/assets/b5707f0b-37a0-4111-8758-09b52821934d)
    ![image](https://github.com/user-attachments/assets/312bed47-c214-4a94-aa5b-11fc57c4d64b)
    ![image](https://github.com/user-attachments/assets/23333a9b-543c-41c8-97df-617ca3ce4655)
 
